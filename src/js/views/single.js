@@ -6,17 +6,27 @@ import { Context } from "../store/appContext";
 export const Single = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
+
+	useEffect(() => {
+		actions.loadDetails(params.theid)
+	}, [])
+
 	return (
-		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element: {store.demo[params.theid].title}</h1>
+		<div className="jumbotron container "> {store.character ? <div className="characterFather">
+			<div className="row ">
+				<div className="col-12 ">
+					<img className="" style={{ margin: 'auto'}} src={`https://starwars-visualguide.com/assets/img/characters/${params.theid}.jpg`} />
+				</div>
+				<div className="characterBody">
+					<h1 className="text-white">{store.character.name}</h1>
+				</div>
+			</div>
+		
+			
+				
+				
+				</div> : "Cargando..."}
 
-			<hr className="my-4" />
-
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
 		</div>
 	);
 };

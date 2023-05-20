@@ -1,0 +1,50 @@
+
+
+body, nav{
+    background-image: url(https://i.gifer.com/NgsT.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+h1{
+    color: #DE4758;
+}
+
+h5{
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-planets{
+    background-color: #19376D;
+}
+
+.bg-characters{
+    background-color: #ceac55;
+}
+
+.logo{
+    width: 7rem;
+    margin-left: 12rem;
+    color: black;
+}
+
+.characterFather{
+    display: flex;
+    justify-content: center;
+}
+
+.characterBody{
+    
+    width: 80rem;
+    height: 15rem;
+    background-color: #a1894e;
+    border: 1px solid white;
+    border-radius: 20px;
+}
