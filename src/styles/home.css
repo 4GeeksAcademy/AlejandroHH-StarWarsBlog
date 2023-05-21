@@ -37,11 +37,21 @@ nav{
     justify-content: space-between;
 }
 
-.thebox{
+.planetTitle{
+    color: #09B8F0;
+}
+
+.characterBox{
     box-shadow: 0px 0px 30px 2px #ceac55;
     border-radius: 25px;
     
 }
+
+.planetBox{
+    box-shadow: 0px 0px 30px 2px #09B8F0;
+    border-radius: 25px;
+}
+
 
 
 
@@ -111,8 +121,23 @@ nav{
     -webkit-backdrop-filter: blur( 5.5px );
 }
 
+.planetBody{
+    width: auto;
+    height: 30rem;
+    background-image: url(https://media0.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif?cid=ecf05e47tywmar10i6kpmfxnr9m1ih7gg77j5ge49iepmy5x&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    border: 1px solid #09B8F0;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
 .details{
     color: #ceac55;
+}
+
+.planetDetails{
+    color:#0099ff;
 }
 
 .hr{
@@ -120,6 +145,14 @@ nav{
     height: .2rem;
     color: #ffffff;
     background-color: #ceac55;
+    margin-top: -2rem;
+}
+
+.hrPlanet{
+    width: 54.4rem;
+    height: .2rem;
+    color: #ffffff;
+    background-color:#19376D;
     margin-top: -2rem;
 }
 

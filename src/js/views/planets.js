@@ -14,7 +14,7 @@ export const Planets = () => {
                     <img src={`https://starwars-visualguide.com/assets/img/planets/${index +1}.jpg`} className="card-img-top" alt="..." />
                     <div className="card-body bg-planets">
                         <h5 className="card-title">{planet.name}</h5>
-                        <a href="#" className="btn btnPlanets btn-primary">
+                        <a href={`/singlePlanet/${index +1}`} className="btn btnPlanets btn-primary">
                         Learn More!
                         </a>
                     </div>
