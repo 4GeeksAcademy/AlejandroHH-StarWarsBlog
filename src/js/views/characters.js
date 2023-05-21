@@ -9,7 +9,7 @@ export const Characters = () => {
       {store.characters.map((character, index) => (
         <div key={index} className="col-sm-12 col-md-6 col-lg-4 text-center d-flex  ">
 
-          <div className="card text-start" style={{ width: "20rem" , height: '35rem', borderRadius: ''}}>
+          <div className="card text-start" style={{ width: "20rem" , height: '35rem'}}>
             <img src={`https://starwars-visualguide.com/assets/img/characters/${index + 1}.jpg`} className="card-img-top" alt="..." />
             <div className="card-body bg-characters ">
               <h5 className="card-title">{character.name}</h5>

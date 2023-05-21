@@ -1,7 +1,7 @@
 
 
 body, nav{
-    background-image: url(https://i.gifer.com/NgsT.gif);
+    background-image: url(https://media0.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif?cid=ecf05e47tywmar10i6kpmfxnr9m1ih7gg77j5ge49iepmy5x&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -9,17 +9,69 @@ body, nav{
 }
 
 h1{
-    color: #DE4758;
+    color: #F6DF1E;
+}
+
+.h1Animation{
+    color: #F6DF1E;
+}
+
+h2{
+}
+
+h4{
+    color: white;
 }
 
 h5{
     color: white;
 }
 
+hr{
+    color: rgb(214, 182, 0);
+    height: 300px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
 }
+
+.thebox{
+    box-shadow: 0px 0px 30px 2px #ceac55;
+    border-radius: 25px;
+    
+}
+
+
+
+.btn{
+    background-color: black;
+    color: #ceac55;
+    border: 1px solid #F6DF1E;
+}
+
+.btn:hover{
+    background-color: #FFD95A;
+    color: black;
+    border: 1px solid #F6DF1E;
+
+}
+
+
+.btnPlanets{
+    background-color: black;
+    color: #09B8F0;
+    border: 1px solid #0099ff;
+}
+
+.btnPlanets:hover{
+    background-color: #09B8F0;
+    color: black;
+    border: 1px solid #000000;
+
+}
+
 
 .bg-planets{
     background-color: #19376D;
@@ -35,16 +87,52 @@ nav{
     color: black;
 }
 
+.favorites{
+    margin-right: 12rem;
+}
+
 .characterFather{
     display: flex;
     justify-content: center;
+    width: auto;
+    height: auto;
 }
 
 .characterBody{
     
-    width: 80rem;
-    height: 15rem;
-    background-color: #a1894e;
-    border: 1px solid white;
+    width: auto;
+    margin-top: 2.7rem;
+    height: 30rem;
+    background-image: url(https://media0.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif?cid=ecf05e47tywmar10i6kpmfxnr9m1ih7gg77j5ge49iepmy5x&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    border: 1px solid #ceac55;
     border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
 }
+
+.details{
+    color: #ceac55;
+}
+
+.hr{
+    width: 54.4rem;
+    height: .2rem;
+    color: #ffffff;
+    background-color: #ceac55;
+    margin-top: -2rem;
+}
+
+.firstRow{
+    margin-top: -2rem;
+    
+}
+
+.planets{
+    color: #09B8F0;
+    
+    
+}
+
+.h1Animation{-webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}

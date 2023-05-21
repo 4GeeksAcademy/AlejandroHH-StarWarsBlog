@@ -10,7 +10,7 @@ export const Navbar = () => {
 			</Link>
 
 			<div>
-			<div className="dropdown">
+			<div className="dropdown favorites">
 				<button className="btn btn-primary dropdown-toggle" style={{width: '10rem', height:'3rem', fontSize: '1.1rem'}} type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Favorites
 				</button>
@@ -21,11 +21,7 @@ export const Navbar = () => {
 				</ul>
 				</div>
 			</div>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
+			
 		</nav>
 	);
 };
