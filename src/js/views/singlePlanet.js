@@ -32,30 +32,30 @@ export const SinglePlanet = props => {
 				
 				<div className="row firstRow text-center">
 					<div className="col-3">
-						<h4>From: {store.planet.name}</h4>
+						<h4>Population: {store.planet.population}</h4>
 					</div>
 					<div className="col-3">
-						 <h4 className="text-white">Birth in: {store.planet.birth_year}</h4>
+						 <h4 className="text-white">Rotation period: {store.planet.rotation_period} days</h4>
 					</div>
 					<div className="col-3">
-						<h4>Gender: {store.planet.gender}</h4>
+						<h4>Orbital period: {store.planet.orbital_period} days</h4>
 					</div>
 					<div className="col-3">
-						<h4>Hair color: {store.planet.hair_color}</h4>
+						<h4>Diameter: {store.planet.diameter}km</h4>
 					</div>
 				</div>
 				<div className="row text-center">
 					<div className="col-3">
-						<h4 className="text-white">Height: {store.planet.height}cm</h4>
+						<h4 className="text-white">Gravity: {store.planet.gravity}</h4>
 					</div>
 					<div className="col-3">
-						<h4>Mass: {store.planet.mass}kg</h4>
+						<h4>Terrain: {store.planet.terrain}</h4>
 					</div>
 					<div className="col-3">
-						<h4>Skin: {store.planet.skin_color}</h4>
+						<h4>Surface water: {store.planet.surface_water}%</h4>
 					</div>
 					<div className="col-3">
-						<h4>Eye color: {store.planet.eye_color}</h4>
+						<h4>Climate: {store.planet.climate}</h4>
 
 					</div>
 				</div>
@@ -70,7 +70,7 @@ export const SinglePlanet = props => {
 			
 				
 				
-				</div> : "Cargando..."}
+				</div> : <h1>.....</h1>}
 
 		</div>
 	);

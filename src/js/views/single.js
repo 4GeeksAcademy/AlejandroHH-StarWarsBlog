@@ -24,7 +24,7 @@ export const Single = props => {
 
 			<div className="row characterBody">
 				<div className="col-12">
-					<h1 className="text-center mt-2" style={{}}>{store.character.name}</h1>
+					<h1 className="text-center mt-2" >{store.character.name}</h1>
 					<h5>{description}</h5>
 				</div>
 				<h2 className="details">DETAILS </h2>

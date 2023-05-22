@@ -64,7 +64,8 @@ nav{
 .btn:hover{
     background-color: #FFD95A;
     color: black;
-    border: 1px solid #F6DF1E;
+    border: 1px solid black;
+    
 
 }
 
@@ -99,6 +100,40 @@ nav{
 
 .favorites{
     margin-right: 12rem;
+}
+
+.favorite{
+    background-color: #000000;
+    color: #ceac55;
+    font-size: 20px;
+    font-weight: bolder;
+    
+
+}
+
+.favorite:hover{
+    background-color: #FFD95A;
+    color: #000000;
+    border: 1px solid black;
+
+    
+}
+
+.favoritePlanet{
+    background-color: #000000;
+    color: #09B8F0;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid #0099ff;
+
+}
+
+.favoritePlanet:hover{
+    background-color: #09B8F0;
+    color: #000000;
+    border: 1px solid black;
+
+    
 }
 
 .characterFather{
