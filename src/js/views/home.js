@@ -3,6 +3,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import { Characters } from "./characters";
 import { Planets } from "./planets";
+import { Vehicles } from "./vehicles";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
@@ -28,6 +29,13 @@ export const Home = () => {
 					<h1 className="col-2 planets h1Animation">PLANETS</h1>
 					<div className="col-12 d-flex overflow-auto" >
 						<Planets />
+					</div>
+				</div>
+
+				<div className="row mt-5">
+					<h1 className="col-2 vehicles h1Animation">VEHICLES</h1>
+					<div className="col-12 d-flex overflow-auto" >
+						<Vehicles />
 					</div>
 				</div>
 		</div>

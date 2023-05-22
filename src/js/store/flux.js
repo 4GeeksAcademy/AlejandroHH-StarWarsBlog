@@ -15,8 +15,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			],
 			characters: [],
 			planets: [],
+			vehicles: [],
 			character: {},
 			planet: {},
+			vehicle: {},
 			favorite: [],
 		},
 		actions: {
@@ -60,6 +62,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					setStore({planets: response.results})
 				})
 			},
+			loadVehicles: () => {
+				fetch("https://www.swapi.tech/api/vehicles/")
+				.then(response => response.json())
+				.then((response) => {
+				//	console.log(response)
+					setStore({vehicles: response.results})
+				})
+			},
 			loadDetails: async (id) => {
 				const resp = await fetch(`https://www.swapi.tech/api/people/${id}`)
 				const data = await resp.json()
@@ -70,15 +80,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const planetData = await planetResp.json()
 
 				setStore({planet: planetData.result.properties})
-				
 
+				const vehicleResp = await fetch(`https://www.swapi.tech/api/vehicles/${id}`)
+				const vehicleData = await vehicleResp.json()
+
+				setStore({vehicle: vehicleData.result.properties});
 
 			},
 			setFavorites: data => {
 				const store = getStore();
 				console.log([...store.favorite, data])
 				setStore({ favorite: [...store.favorite, data] });
-			  }
+			},
+			deleteFavorites: data => {
+				
+			}
 			
 			
 		}

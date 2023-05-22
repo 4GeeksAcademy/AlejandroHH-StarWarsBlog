@@ -2,8 +2,8 @@
 
 body, nav{
     background-image: url(https://media0.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif?cid=ecf05e47tywmar10i6kpmfxnr9m1ih7gg77j5ge49iepmy5x&ep=v1_gifs_search&rid=giphy.gif&ct=g);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size:cover;
 
     
 }
@@ -41,6 +41,10 @@ nav{
     color: #09B8F0;
 }
 
+.vehicleTitle{
+    color: #ce3a00;
+}
+
 .characterBox{
     box-shadow: 0px 0px 30px 2px #ceac55;
     border-radius: 25px;
@@ -49,6 +53,11 @@ nav{
 
 .planetBox{
     box-shadow: 0px 0px 30px 2px #09B8F0;
+    border-radius: 25px;
+}
+
+.vehicleBox{
+    box-shadow: 0px 0px 30px 2px #ce3a00;
     border-radius: 25px;
 }
 
@@ -83,6 +92,18 @@ nav{
 
 }
 
+.btnVehicles{
+    background-color: #000000;
+    color: #ce3a00;
+    border: 1px solid #ce3a00;
+}
+
+.btnVehicles:hover{
+    background-color: #ce3a00;
+    color: #000000;
+    border: 1px solid black;
+}
+
 
 .bg-planets{
     background-color: #19376D;
@@ -90,6 +111,10 @@ nav{
 
 .bg-characters{
     background-color: #ceac55;
+}
+
+.bg-vehicles{
+    background-color: #691e00;
 }
 
 .logo{
@@ -136,6 +161,20 @@ nav{
     
 }
 
+.favoriteVehicle{
+    background-color: #000000;
+    color: #ce3a00;
+    border: 1px solid #ce3a00;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.favoriteVehicle:hover{
+    background-color: #ce3a00;
+    color: #000000;
+    border: 1px solid black;
+}
+
 .characterFather{
     display: flex;
     justify-content: center;
@@ -167,12 +206,27 @@ nav{
     -webkit-backdrop-filter: blur( 5.5px );
 }
 
+.vehicleBody{
+    width: auto;
+    height: 30rem;
+    background-image: url(https://media0.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif?cid=ecf05e47tywmar10i6kpmfxnr9m1ih7gg77j5ge49iepmy5x&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    border: 1px solid #ce3a00;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
 .details{
     color: #ceac55;
 }
 
 .planetDetails{
     color:#0099ff;
+}
+
+.vehicleDetails{
+    color: #ce3a00;
 }
 
 .hr{
@@ -191,6 +245,14 @@ nav{
     margin-top: -2rem;
 }
 
+.hrVehicle{
+    width: 54.4rem;
+    height: .2rem;
+    color: #ffffff;
+    background-color:#691e00;
+    margin-top: -1.7rem;
+}
+
 .firstRow{
     margin-top: -2rem;
     
@@ -198,8 +260,10 @@ nav{
 
 .planets{
     color: #09B8F0;
-    
-    
+}
+
+.vehicles{
+    color: #ce3a00;
 }
 
 .h1Animation{-webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both}
