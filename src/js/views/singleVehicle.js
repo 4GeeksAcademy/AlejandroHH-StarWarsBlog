@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const SingleVehicle = props => {
+export const SingleVehicle = (props) => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
 	const description = "Morbi mollis rhoncus nisi, et accumsan metus. Etiam pretium nunc at lorem congue lobortis. Vestibulum ultricies facilisis eros, ut aliquet augue consectetur ac. Phasellus pharetra, nisl in posuere dictum, purus nunc molestie metus, quis condimentum dui velit vitae nibh. Integer ut suscipit turpis. Maecenas elit dui, aliquet ut lacus quis, dictum suscipit felis. Nulla facilisi. Nulla vel libero in eros porta porttitor. Vestibulum eu ultrices est."
@@ -12,11 +12,14 @@ export const SingleVehicle = props => {
 		actions.loadDetails(params.vehicleid)
 	}, [])
 
+
+
+
 	return (
 		<div className="jumbotron container "> {store.vehicle ? <div className="characterFather mt-5">
 			<div className="row ">
 				<div className="col-12 text-center ">
-					<img className="vehicleBox  me-5 " style={{ marginTop: '2.4rem'}} src={`https://starwars-visualguide.com/assets/img/vehicles/${params.vehicleid}.jpg`} />
+					<img className="vehicleBox  me-5 " style={{ marginTop: '2.4rem'}} src={store.loadvehicles[params.vehicleid]} />
 				</div>
 
 			</div>

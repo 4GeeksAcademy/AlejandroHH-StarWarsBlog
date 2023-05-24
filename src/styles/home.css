@@ -217,6 +217,30 @@ nav{
     -webkit-backdrop-filter: blur( 5.5px );
 }
 
+.charactersCard{
+    border: 1px solid #F6DF1E;
+}
+
+.planetsCard{
+    border: 1px solid #09B8F0;
+}
+
+.vehiclesCard{
+    border: 1px solid #ce3a00;
+}
+
+
+
+.dropdown-menu{
+    background-color: black;
+    border: 1px solid #F6DF1E;
+}
+
+.dropdown-item{
+    color: #F6DF1E;
+}
+
+
 .details{
     color: #ceac55;
 }
@@ -226,7 +250,7 @@ nav{
 }
 
 .vehicleDetails{
-    color: #ce3a00;
+    color: #922900;
 }
 
 .hr{

@@ -1,4 +1,5 @@
 const getState = ({ getStore, getActions, setStore }) => {
+	let vehiclesid = [ 4, 6, 7, 8, 14, 16, 18, 19, 20, 24];
 	return {
 		store: {
 			demo: [
@@ -18,10 +19,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 			vehicles: [],
 			character: {},
 			planet: {},
+			loadvehicles: vehiclesid.map((id) => `https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`),
 			vehicle: {},
 			favorite: [],
 		},
 		actions: {
+			
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
@@ -87,15 +90,25 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({vehicle: vehicleData.result.properties});
 
 			},
+			
 			setFavorites: data => {
 				const store = getStore();
-				console.log([...store.favorite, data])
-				setStore({ favorite: [...store.favorite, data] });
+				// console.log([...store.favorite, data])
+				if(!store.favorite.includes(data)) {
+					setStore({ favorite: [...store.favorite, data] });
+
+				}
 			},
-			deleteFavorites: data => {
-				
-			}
+			handleRemove: index => {
+				const store = getStore();
+				const newFavorites = [...store.favorite];
+				const deletedItem = newFavorites[index]
+				newFavorites.splice(index, 1);
+				alert(` ${deletedItem} has been deleted successfully.`)
+				setStore({ favorite: newFavorites });
+			  },
 			
+			  
 			
 		}
 	};

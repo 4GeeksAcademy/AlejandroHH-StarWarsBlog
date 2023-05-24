@@ -10,7 +10,7 @@ export const Planets = () => {
             return (
                 <div key={index} className="col-sm-12 col-md-6 col-lg-4 text-center d-flex  ">
 
-                    <div className="card text-start" style={{ width: "20rem" , height: '35rem'}}>
+                    <div className="card planetsCard text-start" style={{ width: "20rem" , height: '35rem'}}>
                     <img src={`https://starwars-visualguide.com/assets/img/planets/${index +1}.jpg`} className="card-img-top" alt="..." />
                     <div className="card-body bg-planets">
                         <h5 className="card-title">{planet.name}</h5>
